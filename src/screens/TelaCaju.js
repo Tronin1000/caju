@@ -10,9 +10,9 @@ import estilos from '../styles/estilosCaju';
 export default function TelaCaju() {
   return (
     <ScrollView style={estilos.container}>
-      {/* Cabeçalho */}
+
       <View style={estilos.header}>
-        {/* Linha superior: Benefícios e Extrato */}
+
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' }}>
           <Text style={estilos.headerText}>Benefícios</Text>
           <Text style={estilos.extrato}>Extrato {'>'} </Text>
@@ -20,7 +20,7 @@ export default function TelaCaju() {
         
         <Text style={estilos.saldoPequenoCardBeneficio}>Saldo disponível</Text>
         
-        {/* Linha do R$ 12,19 com Em uso ao lado */}
+
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Text style={estilos.saldoGrandeCardBeneficio}>R$ 12,19</Text>
           <View style={estilos.badgeEmUso}>
@@ -29,7 +29,7 @@ export default function TelaCaju() {
         </View>
       </View>
       
-      {/* Card Principal de Benefícios */}
+
       <View style={estilos.card}>
         <View style={estilos.cardHeader}>
           <Text style={estilos.cardTitle}>Benefícios</Text>
@@ -76,7 +76,6 @@ export default function TelaCaju() {
         </TouchableOpacity>
       </View>
 
-      {/* Card Saldo Caju */}
       <View style={estilos.card}>
         <View style={estilos.cardHeader}>
           <View style={estilos.tituloComBadge}>
