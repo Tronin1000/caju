@@ -94,7 +94,22 @@ export default function TelaCaju() {
         
         <Text style={estilos.saldoPequeno}>Saldo disponível</Text>
         <Text style={estilos.saldoGrandeCard}>R$ 0,39</Text>
+                    <View style={estilos.containerBotoesFlutuantes}>
+        <View style={estilos.cardBotoes}>
+          <TouchableOpacity style={estilos.botaoFlutuante}>
+            <Text style={estilos.textoBotaoFlutuante}>ic</Text>
+          </TouchableOpacity>
+          
+          <TouchableOpacity style={estilos.botaoFlutuante2}>
+            <Text style={estilos.textoBotaoFlutuante2}>ic</Text>
+          </TouchableOpacity>
+        </View>
       </View>
+      </View>
+
+
     </ScrollView>
+
+
   );
 }

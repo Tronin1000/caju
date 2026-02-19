@@ -186,6 +186,56 @@ const estilosCaju = StyleSheet.create({
     color: '#AF181D',
     fontSize: 17,
   },
+    containerBotoesFlutuantes: {
+    alignItems: 'center',
+    marginTop: 20,
+    marginBottom: 30,
+  },
+  cardBotoes: {
+    backgroundColor: '#f3f3f3',
+    borderRadius: 25,
+    padding:15,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    shadowColor: '#000',
+    elevation: 8,
+  },
+  botaoFlutuante: {
+      marginHorizontal: 5,
+    backgroundColor: '#e4073a',
+    paddingVertical: 15,
+    paddingHorizontal: 15,
+    borderRadius: 20,
+    minWidth: 15,
+    alignItems: 'center',
+  },
+  textoBotaoFlutuante: {
+    fontWeight: 'bold',
+    paddingVertical: 5,
+    paddingHorizontal: 8,
+    borderRadius: 5,
+    color: '#ffffff',
+    fontSize: 16,
+
+  },
+    botaoFlutuante2: {
+    marginHorizontal: 5,
+    backgroundColor: '#f3f3f3',
+    paddingVertical: 15,
+    paddingHorizontal: 15,
+    borderRadius: 20,
+    minWidth: 15,
+    alignItems: 'center',
+  },
+  textoBotaoFlutuante2: {
+    fontWeight: 'bold',
+    paddingVertical: 5,
+    paddingHorizontal: 8,
+    borderRadius: 5,
+    color: '#0a0a0a',
+    fontSize: 16,
+
+  },
 });
 
 export default estilosCaju;
