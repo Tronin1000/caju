@@ -87,9 +87,9 @@ const estilosCaju = StyleSheet.create({
   categoriaCard: {
     backgroundColor: '#f1eaeb',
     borderRadius: 16,
-    padding: 15,
+    padding: 10,
     height: 140,
-    width: 160,
+    width: 140,
     alignItems: 'flex-start',
     justifyContent: 'center',
   },
