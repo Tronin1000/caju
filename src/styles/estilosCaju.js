@@ -4,15 +4,15 @@ const estilosCaju = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#D63023',
+   
   },
   header: {
-    marginHorizontal: 25,
-    marginTop: 80,
+    marginHorizontal: 30,
+    marginTop: 100,
     marginBottom: 24,
     backgroundColor: '#af181d',
-    borderRadius: 16,
+    borderRadius: 20,
     padding: 20,
-    height: 200,
     overflow: 'hidden',
   },
   headerLinhaSuperior: {
@@ -61,11 +61,6 @@ const estilosCaju = StyleSheet.create({
     backgroundColor: '#ffffff',
     padding: 20,
     marginBottom: 0,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 3,
   },
   cardHeader: {
     flexDirection: 'row',
@@ -99,19 +94,19 @@ const estilosCaju = StyleSheet.create({
     justifyContent: 'center',
   },
   categoriaIcone: {
-    fontSize: 15,
+    fontSize: 20,
     marginBottom: 40,
     textAlign: 'left',
   },
   categoriaTexto: {
-    fontSize: 14,
+    fontSize: 16,
     color: '#666',
     marginBottom: 4,
     textAlign: 'left',
     fontWeight: '500',
   },
   categoriaValor: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
     color: '#333',
     textAlign: 'left',
@@ -161,15 +156,10 @@ const estilosCaju = StyleSheet.create({
   },
   cardSaldo: {
     backgroundColor: '#ffffff',
-    padding: 35,
+    padding: 15,
     marginBottom: 0,
     marginTop: 0,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 3,
-    height: '100%',
+
   },
   tituloComBadge: {
     flexDirection: 'row',
@@ -183,6 +173,7 @@ const estilosCaju = StyleSheet.create({
     marginLeft: 8,
   },
   badgeTexto: {
+        fontWeight: 'bold',
     color: '#AF181D',
     fontSize: 17,
   },

@@ -10,12 +10,14 @@ import estilos from '../styles/estilosCaju';
 export default function TelaCaju() {
   return (
     <ScrollView style={estilos.container}>
+      
       <View style={estilos.header}>
         <View style={estilos.headerLinhaSuperior}>
           <Text style={estilos.headerText}>Benefícios</Text>
             <TouchableOpacity>
               <Text style={estilos.extrato}>Extrato {'>'} </Text>
              </TouchableOpacity>
+            
         </View>
         
         <Text style={estilos.saldoPequenoCardBeneficio}>Saldo disponível</Text>
@@ -27,7 +29,7 @@ export default function TelaCaju() {
           </View>
         </View>
       </View>
-
+<View style={estilos.containerSecundario}>
       <View style={estilos.card}>
         <View style={estilos.cardHeader}>
           <Text style={estilos.cardTitle}>Benefícios</Text>
@@ -104,6 +106,7 @@ export default function TelaCaju() {
             <Text style={estilos.textoBotaoFlutuante2}>ic</Text>
           </TouchableOpacity>
         </View>
+      </View>
       </View>
       </View>
 
