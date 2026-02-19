@@ -5,7 +5,6 @@ const estilosCaju = StyleSheet.create({
     flex: 1,
     backgroundColor: '#D63023',
   },
-  
   header: {
     marginHorizontal: 25,
     marginTop: 80,
@@ -16,58 +15,48 @@ const estilosCaju = StyleSheet.create({
     height: 200,
     overflow: 'hidden',
   },
-
+  headerLinhaSuperior: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+  },
   headerText: {
     fontSize: 28,
     fontWeight: 'bold',
     color: '#ffffff',
     marginBottom: 30,
   },
-  
+  extrato: {
+    fontSize: 18,
+    fontWeight: '500',
+    color: '#ffffff',
+  },
+  saldoPequenoCardBeneficio: {
+    fontSize: 14,
+    color: '#ffffff',
+    marginBottom: 4,
+  },
+  headerLinhaSaldo: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  saldoGrandeCardBeneficio: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#ffffff',
+  },
   badgeEmUso: {
     backgroundColor: '#FFDE9E',
     borderRadius: 8,
     paddingVertical: 3,
     paddingHorizontal: 12,  
   },
-  
   badgeEmUsoTexto: {
     fontSize: 14,
     color: '#AF181D',
     fontWeight: '500',
   },
-  
-  saldoGrandeCardBeneficio: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#ffffff',
-  },
-  
-  extrato: {
-    fontSize: 18,
-    fontWeight: '500',
-    color: '#ffffff',
-  },
-  
-  saldoPequenoCard: {
-    fontSize: 14,
-    color: '#111010',
-    marginBottom: 4,
-  },
-  
-  saldoGrandeCard: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#090909',
-    marginBottom: 8,
-  },
-  
-  saldoPequenoCardBeneficio: {
-    fontSize: 14,
-    color: '#ffffff',
-    marginBottom: 4,
-  },
-  
   card: {
     backgroundColor: '#ffffff',
     padding: 20,
@@ -78,64 +67,114 @@ const estilosCaju = StyleSheet.create({
     shadowRadius: 8,
     elevation: 3,
   },
-  
+  cardHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  cardTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  detalhes: {
+    fontWeight: 'bold',
+    color: '#C21B40',
+    fontSize: 22,
+  },
+  categoriasLinha: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+    paddingHorizontal: 0,
+  },
+  categoriaCard: {
+    backgroundColor: '#f1eaeb',
+    borderRadius: 16,
+    padding: 15,
+    height: 140,
+    width: 160,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+  },
+  categoriaIcone: {
+    fontSize: 15,
+    marginBottom: 40,
+    textAlign: 'left',
+  },
+  categoriaTexto: {
+    fontSize: 14,
+    color: '#666',
+    marginBottom: 4,
+    textAlign: 'left',
+    fontWeight: '500',
+  },
+  categoriaValor: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#333',
+    textAlign: 'left',
+  },
+  linhaSaldoFixo: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 1,
+  },
+  colunaEsquerda: {
+  },
+  saldoPequeno: {
+    fontSize: 20,
+    color: '#111010',
+    marginBottom: 4,
+  },
+  saldoGrandeCard: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#090909',
+    marginBottom: 4,
+  },
+  colunaDireita: {
+    alignItems: 'flex-end',
+  },
+  fixoTexto: {
+    fontSize: 14,
+    color: '#333',
+    marginBottom: 10,
+  },
+  flexivelTexto: {
+    fontSize: 14,
+    color: '#333',
+  },
+  botaoEnvio: {
+    backgroundColor: '#f8f8f8',
+    padding: 14,
+    borderRadius: 15,
+    borderColor: '#e0e0e0',
+    marginTop: 18,
+  },
+  textoBotao: {
+    color: '#0c0c0c',
+    fontSize: 18,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
   cardSaldo: {
     backgroundColor: '#ffffff',
-    padding: 20,
+    padding: 35,
     marginBottom: 0,
-    marginTop: 8,
+    marginTop: 0,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 8,
     elevation: 3,
+    height: '100%',
   },
-  
-  cardHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 50,
-  },
-  
-  cardTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  
-  detalhes: {
-    fontWeight: 'bold',
-    color: '#C21B40',
-    fontSize: 14,
-  },
-  
-  flexivel: {
-    fontSize: 16,
-    color: '#333',
-    marginBottom: 16,
-  },
-  
-  botaoEnvio: {
-    backgroundColor: '#f8f8f8',
-    padding: 10,
-    borderRadius: 15,
-    borderWidth: 1,
-    borderColor: '#e0e0e0',
-    marginTop: 16,
-  },
-  
-  textoBotao: {
-    color: '#0c0c0c',
-    fontSize: 14,
-    textAlign: 'center',
-  },
-  
   tituloComBadge: {
     flexDirection: 'row',
     alignItems: 'center',
   },
-  
   badgeNovo: {
     backgroundColor: '#FFDE9E',
     borderRadius: 8,
@@ -143,44 +182,10 @@ const estilosCaju = StyleSheet.create({
     paddingVertical: 4,
     marginLeft: 8,
   },
-  
   badgeTexto: {
     color: '#AF181D',
-    fontSize: 12,
-    fontWeight: 'bold',
+    fontSize: 17,
   },
-  
-  categoriaCard: {
-    backgroundColor: '#f1eaeb',
-    borderRadius: 16,
-    padding: 20,
-    height: 140,
-    width: 140,
-    marginHorizontal: 5,
-  },
-  
-  categoriaTexto: {
-    fontSize: 14,
-    color: '#666',
-    marginBottom: 4,
-  },
-  
-  categoriaValor: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  
-  fixoTexto: {
-    fontSize: 14,
-    color: '#333',
-  },
-  
-  flexivelTexto: {
-    fontSize: 14,
-    color: '#333',
-  },
-
 });
 
 export default estilosCaju;
