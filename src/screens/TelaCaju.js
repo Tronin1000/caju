@@ -7,14 +7,14 @@ import {
 } from 'react-native';
 import estilos from '../styles/estilosCaju';
 
-export default function TelaCaju() {
+export default function TelaCaju({ navegarPara }) {
   return (
     <ScrollView style={estilos.container}>
       
       <View style={estilos.header}>
         <View style={estilos.headerLinhaSuperior}>
           <Text style={estilos.headerText}>Benefícios</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navegarPara('Extrato')}>
               <Text style={estilos.extrato}>Extrato {'>'} </Text>
              </TouchableOpacity>
             
@@ -29,90 +29,88 @@ export default function TelaCaju() {
           </View>
         </View>
       </View>
-<View style={estilos.containerSecundario}>
-      <View style={estilos.card}>
-        <View style={estilos.cardHeader}>
-          <Text style={estilos.cardTitle}>Benefícios</Text>
-          <TouchableOpacity>
-            <Text style={estilos.detalhes}>Detalhes {'>'} </Text>
-          </TouchableOpacity>
-        </View>
 
-        <View style={estilos.categoriasLinha}>
-          <View style={estilos.categoriaCard}>
-            <Text style={estilos.categoriaIcone}>icone</Text>
-            <Text style={estilos.categoriaTexto}>Home office</Text>
-            <Text style={estilos.categoriaValor}>R$ 0,00</Text>
+      <View style={estilos.containerSecundario}>
+        <View style={estilos.card}>
+          <View style={estilos.cardHeader}>
+            <Text style={estilos.cardTitle}>Benefícios</Text>
+            <TouchableOpacity>
+              <Text style={estilos.detalhes}>Detalhes {'>'} </Text>
+            </TouchableOpacity>
           </View>
 
-          <View style={estilos.categoriaCard}>
-            <Text style={estilos.categoriaIcone}>icone</Text>
-            <Text style={estilos.categoriaTexto}>Saúde</Text>
-            <Text style={estilos.categoriaValor}>R$ 0,00</Text>
-          </View>
+          <View style={estilos.categoriasLinha}>
+            <View style={estilos.categoriaCard}>
+              <Text style={estilos.categoriaIcone}>🏠</Text>
+              <Text style={estilos.categoriaTexto}>Home office</Text>
+              <Text style={estilos.categoriaValor}>R$ 0,00</Text>
+            </View>
 
-          <View style={estilos.categoriaCard}>
-            <Text style={estilos.categoriaIcone}>icone</Text>
-            <Text style={estilos.categoriaTexto}>Mobilidade</Text>
-            <Text style={estilos.categoriaValor}>R$ 0,00</Text>
-          </View>
-        </View>
+            <View style={estilos.categoriaCard}>
+              <Text style={estilos.categoriaIcone}>❤️</Text>
+              <Text style={estilos.categoriaTexto}>Saúde</Text>
+              <Text style={estilos.categoriaValor}>R$ 0,00</Text>
+            </View>
 
-        <View style={estilos.linhaSaldoFixo}>
-          <View style={estilos.colunaEsquerda}>
-            <Text style={estilos.saldoPequeno}>Saldo disponível</Text>
-            <Text style={estilos.saldoGrandeCard}>R$ 12,19</Text>
-          </View>
-          
-          <View style={estilos.colunaDireita}>
-            <Text style={estilos.fixoTexto}>
-              Fixo: <Text style={{ fontWeight: 'bold' }}>R$ 12,19</Text>
-            </Text>
-            <Text style={estilos.flexivelTexto}>
-              Flexível: <Text style={{ fontWeight: 'bold' }}>R$ 0,00</Text>
-            </Text>
-          </View>
-        </View>
-
-        <TouchableOpacity style={estilos.botaoEnvio}>
-          <Text style={estilos.textoBotao}>
-            Envio de saldo entre categorias
-          </Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={estilos.cardSaldo}>
-        <View style={estilos.cardHeader}>
-          <View style={estilos.tituloComBadge}>
-            <Text style={estilos.cardTitle}>Saldo Caju</Text>
-            <View style={estilos.badgeNovo}>
-              <Text style={estilos.badgeTexto}>Novo</Text>
+            <View style={estilos.categoriaCard}>
+              <Text style={estilos.categoriaIcone}>🚗</Text>
+              <Text style={estilos.categoriaTexto}>Mobilidade</Text>
+              <Text style={estilos.categoriaValor}>R$ 0,00</Text>
             </View>
           </View>
-          <TouchableOpacity>
-            <Text style={estilos.detalhes}>Detalhes {'>'} </Text>
+
+          <View style={estilos.linhaSaldoFixo}>
+            <View style={estilos.colunaEsquerda}>
+              <Text style={estilos.saldoPequeno}>Saldo disponível</Text>
+              <Text style={estilos.saldoGrandeCard}>R$ 12,19</Text>
+            </View>
+            
+            <View style={estilos.colunaDireita}>
+              <Text style={estilos.fixoTexto}>
+                Fixo: <Text style={{ fontWeight: 'bold' }}>R$ 12,19</Text>
+              </Text>
+              <Text style={estilos.flexivelTexto}>
+                Flexível: <Text style={{ fontWeight: 'bold' }}>R$ 0,00</Text>
+              </Text>
+            </View>
+          </View>
+
+          <TouchableOpacity style={estilos.botaoEnvio}>
+            <Text style={estilos.textoBotao}>
+              Envio de saldo entre categorias
+            </Text>
           </TouchableOpacity>
         </View>
-        
-        <Text style={estilos.saldoPequeno}>Saldo disponível</Text>
-        <Text style={estilos.saldoGrandeCard}>R$ 0,39</Text>
-                    <View style={estilos.containerBotoesFlutuantes}>
-        <View style={estilos.cardBotoes}>
-          <TouchableOpacity style={estilos.botaoFlutuante}>
-            <Text style={estilos.textoBotaoFlutuante}>ic</Text>
-          </TouchableOpacity>
+
+        <View style={estilos.cardSaldo}>
+          <View style={estilos.cardHeader}>
+            <View style={estilos.tituloComBadge}>
+              <Text style={estilos.cardTitle}>Saldo Caju</Text>
+              <View style={estilos.badgeNovo}>
+                <Text style={estilos.badgeTexto}>Novo</Text>
+              </View>
+            </View>
+            <TouchableOpacity>
+              <Text style={estilos.detalhes}>Detalhes {'>'} </Text>
+            </TouchableOpacity>
+          </View>
           
-          <TouchableOpacity style={estilos.botaoFlutuante2}>
-            <Text style={estilos.textoBotaoFlutuante2}>ic</Text>
-          </TouchableOpacity>
+          <Text style={estilos.saldoPequeno}>Saldo disponível</Text>
+          <Text style={estilos.saldoGrandeCard}>R$ 0,39</Text>
+          
+          <View style={estilos.containerBotoesFlutuantes}>
+            <View style={estilos.cardBotoes}>
+              <TouchableOpacity style={estilos.botaoFlutuante}>
+                <Text style={estilos.textoBotaoFlutuante}>💳</Text>
+              </TouchableOpacity>
+              
+              <TouchableOpacity style={estilos.botaoFlutuante2}>
+                <Text style={estilos.textoBotaoFlutuante2}>📱</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
         </View>
       </View>
-      </View>
-      </View>
-
-
     </ScrollView>
-
-
   );
 }
