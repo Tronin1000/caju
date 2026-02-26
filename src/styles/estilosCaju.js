@@ -83,6 +83,7 @@ const estilosCaju = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 20,
     paddingHorizontal: 0,
+    gap: 10,
   },
   categoriaCard: {
     backgroundColor: '#f1eaeb',
